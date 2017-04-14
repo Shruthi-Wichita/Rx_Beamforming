@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<block>
+  <name>Apply BF Weight</name>
+  <key>howto_bfweight2_cc</key>
+  <category>D-Tx beamforming</category>
+  <import>import howto</import>
+  <make>howto.bfweight2_cc($bf_weight)</make>
+
+  <callback>set_bf_weight($bf_weight)</callback>
+
+  <param>
+        <name>BF Weight</name>
+        <key>bf_weight</key>
+        <type>complex</type>
+  </param>
+
+  <sink>
+    <name>in</name>
+    <type>complex</type>
+  </sink>
+
+  <source>
+    <name>out</name>
+    <type>complex</type>
+  </source>
+
+<doc>
+Empty!
+</doc>
+</block>

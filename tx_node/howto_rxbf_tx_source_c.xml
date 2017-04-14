@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<block>
+  <name>Dist BF Packet Tx Source</name>
+  <key>howto_rxbf_tx_source_c</key>
+  <category>HOWTO</category>
+  <import>import howto</import>
+  <make>howto.rxbf_tx_source_c($Fs, $Fp, $N)</make>
+  
+  <param>
+	<name>Sampling rate</name>
+	<key>Fs</key>
+	<type>real</type>
+  </param>  
+
+  <param>
+	<name>Packet rate</name>
+	<key>Fp</key>
+	<type>real</type>
+  </param>  
+
+  <param>
+	<name>Packet length</name>
+	<key>N</key>
+	<type>real</type>
+  </param>
+
+  <source>
+    <name>out</name>
+    <type>complex</type>
+  </source>
+
+  <doc>
+Sources periodically transmitted pilot tone packets.
+  </doc>
+</block>

@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<block>
+  <name>RXBF - Rand Ph-pert </name>
+  <key>howto_rxbf_randphpert_f</key>
+  <category>D-Rx beamforming</category>
+  <import>import howto</import>
+  <make>howto.rxbf_randphpert_f($random_perturbation_size, $bf_flag)</make>
+  
+  <callback>set_bf_flag($bf_flag)</callback>
+
+  <param>
+        <name>perturbation angle (degrees)</name>
+        <key>random_perturbation_size</key>
+        <type>real</type>
+  </param>
+
+   <param>
+        <name>Beamforming (On/Off)?</name>
+        <key>bf_flag</key>
+        <type>int</type>
+   </param>
+
+  <sink>
+    <name>in</name>
+    <type>float</type>
+  </sink>
+
+<doc>
+Beamforming (On/Off)?: To turn-off the beamforming put 0. Beamforming is On by default.
+Available functions to probe: gr_complex poll_complex_gain()
+Use with the function probe block.
+</doc>
+
+</block>
