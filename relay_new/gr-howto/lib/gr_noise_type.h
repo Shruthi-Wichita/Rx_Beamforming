@@ -1,0 +1,8 @@
+#ifndef INCLUDED_GR_NOISE_TYPE_H
+#define INCLUDED_GR_NOISE_TYPE_H
+ 
+typedef enum {
+   GR_UNIFORM = 200, GR_GAUSSIAN, GR_LAPLACIAN, GR_IMPULSE
+ } gr_noise_type_t;
+ 
+#endif /* INCLUDED_GR_NOISE_TYPE_H */
