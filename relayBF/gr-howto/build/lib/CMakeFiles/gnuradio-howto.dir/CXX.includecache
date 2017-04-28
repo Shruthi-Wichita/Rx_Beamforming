@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/howto/api.h
+gnuradio/attributes.h
+-
+
+../include/howto/relayBF.h
+howto/api.h
+-
+gnuradio/sync_block.h
+-
+
+/home/madhuprana/relayBF/gr-howto/lib/relayBF_impl.cc
+config.h
+/home/madhuprana/relayBF/gr-howto/lib/config.h
+gnuradio/io_signature.h
+-
+relayBF_impl.h
+/home/madhuprana/relayBF/gr-howto/lib/relayBF_impl.h
+
+/home/madhuprana/relayBF/gr-howto/lib/relayBF_impl.h
+howto/relayBF.h
+-
+gnuradio/sync_block.h
+-
+
